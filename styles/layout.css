@@ -21,6 +21,7 @@ header {
     padding: 30px 20px;
     font-size: 0.95rem;
     grid-column: 1/4;
+
 }
 
 /* === NAV === */
@@ -48,12 +49,13 @@ nav a:hover {
 .content-row {
     display: flex;
     grid-column: 1/4;
+    gap: 8px;
 }
 
 /* === MAIN === */
 main {
     background-color: #b0b0b0;
-    flex: 3;
+    flex: 2;
     padding: 20px;
     color: #555;
     font-size: 0.9rem;
