@@ -20,6 +20,7 @@ header {
     color: #ddd;
     padding: 30px 20px;
     font-size: 0.95rem;
+    grid-column: 1/4;
 }
 
 /* === NAV === */
@@ -27,6 +28,7 @@ nav {
     background-color: #555555;
     display: flex;
     justify-content: space-around;
+    grid-column: 1/4;
 }
 
 nav a {
@@ -45,6 +47,7 @@ nav a:hover {
 /* === CONTENT ROW === */
 .content-row {
     display: flex;
+    grid-column: 1/4;
 }
 
 /* === MAIN === */
@@ -103,4 +106,5 @@ footer {
     text-align: center;
     padding: 40px 20px;
     font-size: 0.9rem;
+    grid-column: 1/4;
 }
