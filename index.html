@@ -8,6 +8,7 @@
   <meta name="description" content="SIMIRE SIMEON OBAMIEGIE ABOUT PAGE, WDD 131">
   <meta name="author" content="Simire Simeon Obamiegie">
   <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer ></script>
 </head>
 
 <body>
@@ -97,14 +98,14 @@
 
   <!-- Footer -->
   <footer>
-    <p>©2026 💻 Simire Simeon 💻 Edo State, Nigeria</p>
+    <p>©<span id="currentYear"></span> 💻 Simire Simeon 💻 Edo State, Nigeria</p>
     <p class="last-modified">
-      Last Modification: <span id="last-modified"></span>
+      Last Modification: <span id="lastModified"></span>
     </p>
   </footer>
 
   <script>
-    document.getElementById('last-modified').textContent = document.lastModified;
+    document.getElementById('lastModified').textContent = document.lastModified;
   </script>
 
 </body>
