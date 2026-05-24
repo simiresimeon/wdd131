@@ -5,63 +5,107 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Simire Simeon Obamiegie | WDD 131</title>
-  <meta name="description"
-    content="SIMIRE SIMEON OBAMIEGIE ABOUT PAGE, WDD 131">
+  <meta name="description" content="SIMIRE SIMEON OBAMIEGIE ABOUT PAGE, WDD 131">
   <meta name="author" content="Simire Simeon Obamiegie">
   <link rel="stylesheet" href="styles/layout.css">
 </head>
 
 <body>
 
-    <header>
-      <p>WDD 131: Dynamic Web Fundamentals</P>
-    </header>
+  <!-- Header -->
+  <header>
+    <p>WDD 131: Dynamic Web Fundamentals</p>
+  </header>
 
-    <nav>
-      <a href="#">LinkedIn</a>
-      <a href="#">I-Learn</a>
-      <a href="#">Scripture</a>
-      <a href="#">Final Project</a>
-    </nav>
+  <!-- Navigation -->
+  <nav>
+    <a href="#">LinkedIn</a>
+    <a href="#">I-Learn</a>
+    <a href="#">Scripture</a>
+    <a href="#">Final Project</a>
+  </nav>
 
-    <!-- Content Row -->
-    <div class="content-row">
+  <!-- Hero / Name Banner -->
+  <div class="hero">
+    <h1>Simire Simeon Obamiegie</h1>
+  </div>
 
-      <!-- Main section -->
-      <main>
-        Main Content
-        <div class="placeholder-img"></div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-        </p>
-        <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur.
-        </p>
-      </main>
+  <!-- Main Content Card -->
+  <main>
+    <div class="card">
+      <div class="card-header">About Me</div>
+      <div class="card-body">
 
-      <!-- Aside section -->
-      <aside>
-        Aside Content
-        <div class="placeholder-img"></div>
-        <p>
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-          deserunt mollit anim id est laborum.
-        </p>
-      </aside>
+        <!-- Bio + Profile Photo -->
+        <div class="bio-section">
+          <p class="bio-text">
+            My name is Simeon and I go by SIMIRE. I was born in Edo State, Nigeria. I am a
+            Biotechnology and Genetics graduate working as a UI/UX designer, Flutter developer,
+            and graphic designer under my personal brand, SIMIRE. I love building meaningful
+            digital experiences and I am passionate about my faith, technology, and creative work.
+          </p>
+          <img
+            src="https://picsum.photos/seed/simire/120/150"
+            alt="Profile photo of Simire Simeon"
+            class="profile-img"
+          />
+        </div>
 
+        <hr />
+
+        <!-- Location Title -->
+        <h3 class="location-title">Benin City, Edo State — Nigeria</h3>
+
+        <!-- Flag + Location Description -->
+        <div class="location-section">
+          <figure class="flag-figure">
+            <img
+              src="https://flagcdn.com/w160/ng.png"
+              alt="Official Flag of Nigeria"
+              class="flag-img"
+            />
+            <figcaption>Official Flag of Nigeria</figcaption>
+          </figure>
+          <p class="location-text">
+            Nigeria is the most populous country in Africa, home to over 200 million people
+            and more than 250 ethnic groups. Edo State, located in the south-south geopolitical
+            zone, is rich in history and culture — known as the seat of the ancient Benin Kingdom,
+            one of the oldest and most sophisticated kingdoms in West African history.
+          </p>
+        </div>
+
+      </div>
     </div>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-        <P>
-            ©2026 💻 Simire Simeon 💻 Edo state, Nigeria.
-        </P>
-    </footer>
+  <!-- Aside / Sidebar Card -->
+  <aside>
+    <div class="card">
+      <div class="card-header">Web Dev Resources</div>
+      <div class="card-body">
+        <ul class="resource-list">
+          <li><a href="https://dev.to" target="_blank" rel="noopener">Dev.to Community</a></li>
+          <li><a href="https://www.smashingmagazine.com" target="_blank" rel="noopener">Smashing Magazine</a></li>
+          <li><a href="https://css-tricks.com" target="_blank" rel="noopener">CSS Tricks</a></li>
+          <li><a href="https://www.w3schools.com" target="_blank" rel="noopener">W3 Schools</a></li>
+          <li><a href="https://www.udemy.com" target="_blank" rel="noopener">Udemy</a></li>
+          <li><a href="https://picsum.photos" target="_blank" rel="noopener">Lorem Picsum Image Placeholder</a></li>
+        </ul>
+      </div>
+    </div>
+  </aside>
 
+  <!-- Footer -->
+  <footer>
+    <p>©2026 💻 Simire Simeon 💻 Edo State, Nigeria</p>
+    <p class="last-modified">
+      Last Modification: <span id="last-modified"></span>
+    </p>
+  </footer>
 
+  <script>
+    document.getElementById('last-modified').textContent = document.lastModified;
+  </script>
 
 </body>
 </html>
