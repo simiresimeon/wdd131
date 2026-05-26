@@ -219,7 +219,7 @@ footer {
     text-align: center;
     padding: 20px;
     font-size: 0.9rem;
-    grid-column: 1 / -1;
+    grid-column: 1 / 4;
 }
 
 .last-modified {
